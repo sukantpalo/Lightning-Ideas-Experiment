@@ -1,8 +1,8 @@
-<aura:component controller="jmb.CaseCards">
+<aura:component controller="palo.CaseCards">
     <aura:attribute name="parentIdeaId" type="String"/>
     <aura:attribute name="resultMessage" type="String"/>
     <aura:attribute name="ideaVotes" type="Vote[]"/>
-    <aura:handler event="jmb:OpenIdea" action="{!c.handleOpenIdea}"/>
+    <aura:handler event="palo:OpenIdea" action="{!c.handleOpenIdea}"/>
     
     <div class="votewrapper">
         <div id="{!'votebox' + v.parentIdeaId}" data-parentid="{!v.parentIdeaId}">
