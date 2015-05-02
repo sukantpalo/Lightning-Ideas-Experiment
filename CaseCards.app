@@ -1,5 +1,5 @@
 <aura:application>   
     
-    <jmb:CardViewer/>
+    <palo:CardViewer/>
 
 </aura:application>
