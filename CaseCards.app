@@ -1,5 +1,5 @@
 <aura:application>   
     
-    <CardViewer/>
+    <c:CardViewer/>
 
 </aura:application>
