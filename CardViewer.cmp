@@ -1,4 +1,4 @@
-<aura:component controller="palo.CaseCards" implements="force:appHostable">
+<aura:component controller="CaseCards" implements="force:appHostable">
     <aura:attribute name="idea" type="Idea" default="{'sobjectType': 'Idea'}"/>
     <aura:attribute name="ideas" type="Idea[]"/>
     <aura:attribute name="profilePhotoUrl" type="String"/>
@@ -22,11 +22,11 @@
     
     <!-- To load JS libraries in a particular order, I used the code from
    https://github.com/rajaraodv/loadcomponent -->    
-    <palo:load 
+    <load 
               filesInParallel="/resource/bootstrapcssmin.sfcss,/resource/animate.sfcss"
               filesInSeries="/resource/isotope.sfjs,/resource/jquerymin.sfjs,/resource/modernizr.sfjs,/resource/timeago.sfjs,/resource/bootstrapjs.sfjs" />
     
-    <aura:handler event="palo:staticResourcesLoaded" action="{!c.initScripts}"/>    
+    <aura:handler event="staticResourcesLoaded" action="{!c.initScripts}"/>    
     
     <!-- This attribute will hold out JS object that represents our "cards" -->    
     <aura:attribute name="objIsotope" type="Object" />
