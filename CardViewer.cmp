@@ -22,7 +22,7 @@
     
     <!-- To load JS libraries in a particular order, I used the code from
    https://github.com/rajaraodv/loadcomponent -->    
-    <load 
+    <c:load 
               filesInParallel="/resource/bootstrapcssmin.sfcss,/resource/animate.sfcss"
               filesInSeries="/resource/isotope.sfjs,/resource/jquerymin.sfjs,/resource/modernizr.sfjs,/resource/timeago.sfjs,/resource/bootstrapjs.sfjs" />
     
